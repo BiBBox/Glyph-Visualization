@@ -340,6 +340,9 @@ void GVelementViewFindings::sliderValueChanged(int v) {
 void GVelementViewFindings::updateValueFields ()
 {
     recnumberL->setText (QString::number(recNumber) );
+  
+    
+/*
     
     sampeAgeL->setText (QString::number (findings->el.value(recNumber)->age));
     sendDateL->setText (QString::number (findings->el.value(recNumber)->year));
@@ -362,7 +365,8 @@ void GVelementViewFindings::updateValueFields ()
        SurvivalL->setText    (QString::number( findings->el.value(recNumber)->survival ) + " Jahre");
 	else
        SurvivalL->setText    ("");
-   
+*/
+    
     glWindow->generate3DdisplayList (recNumber);
     glWindow->updateGL();
     
